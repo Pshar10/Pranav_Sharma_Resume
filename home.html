@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+    
+    <title>Pranav Sharma - Resume</title>
+
+    <style>
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: #f4f7fa; /* Lighter background for better contrast */
+            color: #4a4a4a; /* Darker text for better readability */
+            scroll-behavior: smooth;
+        }
+        header {
+            background: #2c3e50; /* Darker header for a sophisticated look */
+            color: #ecf0f1; /* Lighter text for contrast */
+            padding: 20px 10%;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+        nav {
+            text-align: center;
+            margin: 20px 0;
+            background: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            text-decoration: none;
+            color: #3498db; /* Soft blue for links */
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #2980b9; /* Darker blue on hover */
+        }
+        section {
+            padding: 20px 10%;
+            transition: all 0.3s ease-in-out;
+        }
+        h2 {
+            color: #2c3e50; /* Dark color for section titles */
+            font-size: 2em;
+            border-bottom: 2px solid #3498db; /* Blue border for emphasis */
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+        }
+        .skills, .certifications, .experience, .projects, .education, .other-skills {
+            margin-bottom: 30px;
+        }
+        .card {
+            background: #fff;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        footer {
+            background: #2c3e50; /* Match header color for uniformity */
+            color: #ecf0f1;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        /* Smooth scrolling effect */
+        html {
+            scroll-behavior: smooth;
+        }
+        #contact {
+        padding: 40px 10%;
+        background: #ecf0f1;
+        color: #2c3e50;
+        text-align: center;
+        }
+
+        #contact h2 {
+        font-size: 2.5em;
+        margin-bottom: 20px;
+        color: #2c3e50;
+        }
+
+        #contact p {
+        font-size: 1.1em;
+        margin-bottom: 30px;
+        color: #34495e;
+        }
+
+        form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 800px;
+        margin: 0 auto;
+        gap: 20px;
+        }
+
+        .form-group {
+        width: 100%;
+        max-width: 500px;
+        text-align: left;
+        }
+
+        .form-group label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        .form-group textarea {
+        height: 150px;
+        resize: vertical;
+        }
+
+        button {
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        }
+
+        button:hover {
+        background-color: #2980b9;
+        }
+
+        /* Responsiveness */
+        @media (max-width: 768px) {
+        #contact {
+        padding: 20px 5%;
+        }
+        form {
+        padding: 10px;
+        gap: 15px;
+        }
+        .form-group input,
+        .form-group textarea {
+        font-size: 1em;
+        }
+        button {
+        font-size: 1.2em;
+        padding: 12px 25px;
+        }
+        }
+
+        @media (max-width: 480px) {
+        #contact h2 {
+        font-size: 2em;
+        }
+        #contact p {
+        font-size: 1em;
+        }
+        .form-group input,
+        .form-group textarea {
+        font-size: 0.9em;
+        }
+        button {
+        font-size: 1.1em;
+        }
+        }
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+        }
+
+        /* Final state when the element is in view */
+        .fade-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Chat bubble */
+        #chat-bubble {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        #chat-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #chat-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 300px;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #chat-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border-radius: 8px 8px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #chat-header button {
+            background: none;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #chat-body {
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+
+        #chat-form {
+            display: flex;
+            margin-top: 10px;
+        }
+
+        #chat-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        #chat-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        .chat-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 10px;
+        }
+
+        .chat-buttons button {
+            flex: 1;
+            background-color: #f0f0f0;
+            color: #007bff;
+            border: none;
+            border-radius: 4px;
+            padding: 6px;
+            margin: 5px 2px;
+            font-size: 14px;
+            cursor: pointer;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s;
+        }
+
+        .chat-buttons button:hover {
+            background-color: #e0e0e0;
+        }
+
+        .profile-container {
+            position: left;
+            top: 10px;
+            right: 10px;
+        }
+
+        .profile-pic {
+            width: 120px;  /* Adjust the size as needed for smaller images */
+            height: 120px; /* Ensure width and height are equal for a round shape */
+            border-radius: 50%; /* Makes the image round */
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+        }
+
+
+        body, html, a, button, input, select, textarea {
+            cursor: none; /* Globally hide the default cursor */
+        }
+
+        .custom-cursor {
+            position: fixed; /* Stick to the viewport */
+            width: 20px;
+            height: 20px;
+            background-color: rgba(0, 123, 255, 0.5);
+            border-radius: 50%; /* Round shape */
+            pointer-events: none; /* Ensure it doesn't block interactions */
+            transform: translate(-50%, -50%);
+            transition: transform 0.1s ease, background-color 0.2s ease;
+            z-index: 10000; /* High z-index to make sure it overlays other content */
+        }
+
+        .click-effect {
+            animation: clickAnimation 0.4s ease-out;
+        }
+
+        @keyframes clickAnimation {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(1.5);
+                opacity: 0;
+            }
+        }
+
+    </style>
+
+    
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="profile-container">
+            <img src="profile-pic.png" alt="Profile Picture" style="width: 150px; height: auto;">
+        </div>
+        <h1>Pranav Sharma</h1>
+        <p>Media Technology Master's Graduate | Audio Engineer | Software Developer</p>
+        <p>Email: <a href="mailto:pshar416@gmail.com">pshar416@gmail.com</a> | Phone: +49 160 95483472</p>
+    </header>
+
+<nav>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#socials">Socials</a>
+    <a href="about.html">Highlights</a>
+</nav>
+
+<section id="summary">
+    <h2>Summary</h2>
+    <p>Master's graduate in Media Technology with 3 years' experience in audio engineering and a strong software development background. Seeking to contribute to innovative technology projects.</p>
+</section>
+
+
+
+<section id="skills" >
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming Languages:</strong> Python, C++, Java, MATLAB</li>
+        <li><strong>Frameworks and Tools:</strong> PyTorch, Docker, Kubernetes, Jenkins, Ansible</li>
+        <li><strong>Databases:</strong> MySQL, MongoDB, DynamoDB</li>
+        <li><strong>Business Intelligence:</strong> Pandas (Data Analysis), AWS Developer</li>
+        <li><strong>Languages:</strong> English (Proficient), German (B1)</li>
+    </ul>
+</section>
+
+<section id="certifications" class="certifications fade-up">
+    <h2>Certifications</h2>
+    <ul>
+        <li>Agile Working (November 2018)</li>
+        <li>Internet of Things (November 2018)</li>
+    </ul>
+</section>
+
+<section id="experience" class="experience fade-up">
+    <h2>Experience</h2>
+    
+    <div class="card">
+        <h3>Graduate Researcher - Fraunhofer IIS</h3>
+        <p><em>Jan 2022 - Sep 2024 | Erlangen, Germany</em></p>
+        <ul>
+            <li>Developed and deployed the CINGO spatial audio system in Unity 3D, enhancing the user experience in virtual environments by creating modular software for real-time spatial audio rendering.</li>
+            <li>Conducted a comparative analysis of loudspeaker and headphone recordings using sine sweep, analyzing Room Impulse Responses (RIRs) and correlating acoustic measures with perceptual audio quality.</li>
+            <li>Recorded loudspeaker/headphones using sweeps for multiple source-receiver configurations to improve and enhance the RIR dataset.</li>
+            <li>Designed Acoustic Visualization tools using Qt/C++, enabling room acoustics visualization and analysis of large datasets.</li>
+            <li>Enhanced Binaural Room Impulse Responses (BRIRs) and assessed innovative spatial audio plugins, optimizing data-driven audio systems for improved localization, timbre, and envelopment, which ties into automated data extraction and performance analysis.</li>
+            <li>Played a pivotal role in the Mobile Audio Rendering team, enhancing overall user experience in spatial audio using signal processing.</li>
+            <li>Executed MUSHRA tests to assess spatial audio perceptual effects with HRTF across diverse populations, achieving a 30% improvement in audio quality.</li>
+            <li>Designed and implemented an analysis framework for comparing various spatial binaural renderers, enabling comprehensive comparison and optimization of spatial audio tools.</li>
+            <li>Created a RIR similarity matching algorithm using unsupervised machine learning, automating the comparison of Frequency Domain Network (FDN)-based RIRs with real-world RIRs, improving system efficiency by streamlining data processing.</li>
+        </ul>
+    </div>
+
+    <div class="card fade-up">
+        <h3>Associate Engineer - Tata Consultancy Services</h3>
+        <p><em>Sep 2018 - Jun 2020 | Pune, India</em></p>
+        <ul>
+            <li>Designed and deployed a three-tier web application using Docker, Kubernetes, Jenkins, and AWS EC2, improving deployment efficiency by 40%.</li>
+            <li>Deployed a complete environment, including VPC, EC2 instances, RDS, and S3 buckets, with version-controlled templates.</li>
+            <li>Implemented a CI/CD pipeline using AWS CodePipeline and CodeBuild, automating the deployment of a serverless application with AWS Lambda and S3, reducing deployment time by 30%.</li>
+            <li>Maintained and optimized the Model Data Repository for offshore banking operations with the Bank of Montreal, ensuring high data integrity and performance.</li>
+            <li>Designed data models and implemented complex SQL queries for data extraction, reporting, and analytics, reducing query execution time by 20%.</li>
+            <li>Developed a RESTful API for managing database interactions, integrating DynamoDB for highly available data processing.</li>
+            <li>Standardized infrastructure deployment using AWS CDK and CloudFormation templates, reducing manual configuration errors by 80%.</li>
+            <li>Migrated on-premises MySQL and PostgreSQL databases to AWS RDS with minimal downtime using AWS Database Migration Service (DMS), improving database performance and reliability.</li>
+        </ul>
+    </div>
+</section>
+
+
+<section id="projects" class="projects fade-up">
+    <h2>Projects</h2>
+    <div class="card">
+        <h3>AI-Based Decay Parameter Estimation</h3>
+        <p><em>Master's Thesis</em></p>
+        <p>Developed a novel DCNN model for estimating decay parameters directly from reverberant speech signals, achieving RMS errors of 2.9 to 6 dB for EDC loss and 0.08 to 0.21 seconds for reverberation time (RT) loss.</p>
+        <a href="https://github.com/Pshar10/Blind-Estimation-of-EDC-from-Live-Signals">GitHub Link</a>
+    </div>
+    <div class="card">
+        <h3>Spring Boot CI/CD Pipeline</h3>
+        <p><em>Automated Deployment Pipeline</em></p>
+        <p>A robust CI/CD pipeline for automating the deployment of a Spring Boot application using Jenkins, Docker, and Kubernetes. Integrated SonarQube for static code analysis, deployed in a Kubernetes cluster with GitOps managed by ArgoCD, and containerized using Docker.</p>
+        <a href="https://github.com/Pshar10/spring-boot-app-cicd-pipeline">GitHub Link</a>
+    </div>
+    
+    <div class="card">
+        <h3>Three-Tier Web Application</h3>
+        <p><em>Digital Resume Application</em></p>
+        <p>A three-tier web application implemented as a Dockerized microservice designed to act as a digital resume. The application uses a frontend built with HTML, CSS, and JavaScript and a backend Django application. Deployed in Kubernetes for scalability and reliability.</p>
+        <a href="https://github.com/Pshar10/Three-Tier-Web-Application">GitHub Link</a>
+    </div>
+    
+    
+    <div class="card fade-up">
+        <h3>AI/ML Pipeline</h3>
+        <p>Developed and deployed a fully automated machine learning pipeline, utilizing Elastic Beanstalk for serverless application deployment. Integrated AWS CodePipeline with GitHub for CI/CD, automating the deployment process and enabling seamless model training, evaluation, and deployment.</p>
+        <a href="https://github.com/Pshar10/AI-ML-pipeline">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>Real-Time Contour Detection</h3>
+        <p>Developed a two-tier web application for real-time contour detection and sensor control using Raspberry Pi and OpenCV. Deployed the system using AWS Elastic Beanstalk and Docker.</p>
+        <a href="https://github.com/Pshar10/Web_Application_Countour_Detection_Using_Raspberrypi_And_Sensor_Controls">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>Video Processing</h3>
+        <p>Created Python programs for channel segregation, quantization, DCT, kernel filters, object detection, and pickling for video processing tasks.</p>
+        <a href="https://github.com/Pshar10/SimpleVideoCodec">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>Context-Based Image Retrieval</h3>
+        <p>Implemented a system to retrieve images from a large database based on their visual content using machine learning techniques.</p>
+        <a href="https://github.com/Pshar10/Content_Based_Image_Retrieval">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>VR Game Development</h3>
+        <p>Developed an arm-swinging locomotion game using HTC Vive, enhancing VR user experience by reducing dizziness by 60% while playing games.</p>
+        <a href="https://github.com/Pshar10/VR_Game">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>Loudspeakers to Go</h3>
+        <p>Created a mobile virtual loudspeaker setup on headphones using the Binaural Room Impulse Response database and Intel RealSense depth camera with 3 DoF, enhancing the spatial audio experience on portable devices.</p>
+        <a href="https://github.com/Pshar10/Loudspeakers_2_GO">GitHub Link</a>
+    </div>
+    
+    <div class="card fade-up">
+        <h3>Audio Processing</h3>
+        <p>Developed Python programs for down/up sampling, filtering, quantization, low delay filter-banks, pitch/speed enhancement, DCT, MDCT, and QMF for advanced audio processing tasks.</p>
+        <a href="https://github.com/Pshar10/Audio_Video_Processing">GitHub Link</a>
+    </div>
+    
+</section>
+
+<section id="education" class="education fade-up">
+    <h2>Education</h2>
+    <div class="card">
+        <h3>Master's in Media Technology</h3>
+        <p><em>TU Ilmenau, Germany | GPA: 1.3</em></p>
+        <p><strong>Relevant Courses:</strong> Advanced Digital Signal Processing, Deep Learning, AI, Audio/Video Coding</p>
+    </div>
+    <div class="card fade-up">
+        <h3>Bachelor's in Electronics and Communication</h3>
+        <p><em>SMVDU, Jammu, India</em></p>
+        <p><strong>Relevant Courses:</strong> Digital Electronics, Real-Time DSP, Signal Processing</p>
+    </div>
+</section>
+
+
+<!-- <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+    <form method="POST" action="/submit/">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+    
+        <button type="submit">Send Message</button>
+    </form>
+    
+</section> -->
+
+<!-- <div id="chat-bubble">
+    <button id="chat-button">💬</button>
+    <div id="chat-window" style="display: none;">
+        <div id="chat-header">
+            <span>Chat</span>
+            <button id="close-chat">X</button>
+        </div>
+        <div id="chat-body">
+            <p>Bot: Hi! What is your name?</p>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div> -->
+
+<footer id="socials">
+    <p>Connect with me on <a href="https://www.linkedin.com/in/pranav1010">LinkedIn</a> | <a href="https://github.com/Pshar10">GitHub</a></p>
+    <p>&copy; 2025 Pranav Sharma</p>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const elements = document.querySelectorAll('.fade-up');
+
+            window.addEventListener('scroll', function() {
+                elements.forEach(function(element) {
+                    let position = element.getBoundingClientRect().top;
+                    let windowHeight = window.innerHeight;
+
+                    if (position < windowHeight - 100) {
+                        console.log('Adding active class to:', element);
+                        element.classList.add('active');
+                    }
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const chatButton = document.getElementById("chat-button");
+            const chatWindow = document.getElementById("chat-window");
+            const closeChat = document.getElementById("close-chat");
+            const chatForm = document.getElementById("chat-form");
+            const chatInput = document.getElementById("chat-input");
+            const chatBody = document.getElementById("chat-body");
+
+            const csrfToken = document.querySelector('[name=csrfmiddlewaretoken]').value;
+
+            chatButton.addEventListener("click", function () {
+                chatWindow.style.display = "block";
+            });
+
+            closeChat.addEventListener("click", function () {
+                chatWindow.style.display = "none";
+            });
+
+            let userName = "";
+            let userEmail = "";
+            let userMessage = "";
+            let isConfirmingMessage = false;
+
+            chatForm.addEventListener("submit", handleFormSubmit);
+
+            function handleFormSubmit(e) {
+                e.preventDefault();
+                const userInput = chatInput.value.trim();
+
+                if (userInput) {
+                    if (!userName) {
+                        userName = userInput;
+                        updateChat(`<p>You: ${userName}</p><p>Bot: Nice to meet you, ${userName}! Could you please provide your email?</p>`);
+                    } else if (!userEmail) {
+                        if (isValidEmail(userInput)) {
+                            userEmail = userInput;
+                            updateChat(`<p>You: ${userEmail}</p><p>Bot: Thank you! What's the message you would like to send?</p>`);
+                        } else {
+                            updateChat(`<p>You: ${userInput}</p><p>Bot: Hmm, that doesn't look like a valid email. Could you please try again?</p>`);
+                        }
+                    } else if (!isConfirmingMessage) {
+                        userMessage = userInput;
+                        updateChat(`<p>You: ${userMessage}</p><p>Bot: Would you like to send this message?</p>`, addConfirmButtons);
+                        isConfirmingMessage = true;
+                        chatForm.querySelector("button").disabled = true;
+                    }
+                }
+            }
+
+            function isValidEmail(email) {
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return emailRegex.test(email);
+            }
+
+            function addConfirmButtons() {
+                chatBody.innerHTML += `<div id="confirm-buttons">
+                                            <button id="yes-button">Yes</button>
+                                            <button id="no-button">No</button>
+                                    </div>`;
+                document.getElementById("yes-button").addEventListener("click", sendMessageAndShowSuccess);
+                document.getElementById("no-button").addEventListener("click", askDeleteOrEdit);
+            }
+
+            function sendMessageAndShowSuccess() {
+                fetch("/submit/", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRFToken": csrfToken
+                    },
+                    body: JSON.stringify({ name: userName, email: userEmail, message: userMessage })
+                })
+                    .then(response => response.json())
+                    .then(result => {
+                        const responseMessage = result.status === "success"
+                            ? "Great! Your message has been sent successfully."
+                            : `Oh no, there was an error: ${result.message}`;
+                        updateChat(`<p>Bot: ${responseMessage}</p>`, resetChat);
+                    })
+                    .catch(error => {
+                        console.error("Error sending message:", error);
+                        updateChat("<p>Bot: There was an error sending your message. Please try again.</p>");
+                    });
+            }
+
+            function askDeleteOrEdit() {
+                document.getElementById("confirm-buttons").remove();
+                updateChat(`<p>Bot: Would you like to edit your message, or start over?</p>`, addEditOptions);
+            }
+
+            function addEditOptions() {
+                chatBody.innerHTML += `<div id="edit-buttons">
+                                            <button id="delete-button">Start Over</button>
+                                            <button id="edit-button">Edit Message</button>
+                                    </div>`;
+                document.getElementById("delete-button").addEventListener("click", resetChat);
+                document.getElementById("edit-button").addEventListener("click", function () {
+                    updateChat("<p>Bot: Please edit your message below:</p>");
+                    chatInput.value = userMessage;
+                    chatForm.querySelector("button").disabled = false;
+                    isConfirmingMessage = false; // Reset confirmation state
+                });
+            }
+
+            function resetChat() {
+                setTimeout(() => {
+                    chatBody.innerHTML = "<p>Bot: Hello! What’s your name?</p>";
+                    userName = "";
+                    userEmail = "";
+                    userMessage = "";
+                    isConfirmingMessage = false;
+                    chatForm.querySelector("button").disabled = false;
+                    chatInput.value = ""; // Clear input field
+                }, 1500);
+            }
+
+            function updateChat(html, callback) {
+                chatBody.innerHTML += html;
+                chatInput.value = ""; // Clear input field for new input
+                if (callback) callback();
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const cursor = document.createElement('div');
+            cursor.classList.add('custom-cursor');
+            document.body.appendChild(cursor);
+
+            document.addEventListener('mousemove', (e) => {
+                cursor.style.left = `${e.clientX}px`; // Use clientX to handle fixed position
+                cursor.style.top = `${e.clientY}px`;  // Use clientY to handle fixed position
+            });
+
+            document.addEventListener('mousedown', () => {
+                cursor.classList.add('click-effect');
+            });
+
+            document.addEventListener('mouseup', () => {
+                cursor.classList.remove('click-effect');
+            });
+        });
+
+    </script>
+</body>
+</html>
