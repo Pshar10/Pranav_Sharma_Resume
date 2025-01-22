@@ -327,38 +327,6 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
         }
 
-
-        body, html, a, button, input, select, textarea {
-            cursor: none; /* Globally hide the default cursor */
-        }
-
-        .custom-cursor {
-            position: fixed; /* Stick to the viewport */
-            width: 20px;
-            height: 20px;
-            background-color: rgba(0, 123, 255, 0.5);
-            border-radius: 50%; /* Round shape */
-            pointer-events: none; /* Ensure it doesn't block interactions */
-            transform: translate(-50%, -50%);
-            transition: transform 0.1s ease, background-color 0.2s ease;
-            z-index: 10000; /* High z-index to make sure it overlays other content */
-        }
-
-        .click-effect {
-            animation: clickAnimation 0.4s ease-out;
-        }
-
-        @keyframes clickAnimation {
-            0% {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 1;
-            }
-            100% {
-                transform: translate(-50%, -50%) scale(1.5);
-                opacity: 0;
-            }
-        }
-
     </style>
 
     
