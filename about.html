@@ -3,67 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    
+    
+    <title>Pranav Sharma - Resume</title>
     
 </head>
+
 <body>
-<header>
-    <h1>About me</h1>
-</header>
+
+    <header>
+        <div class="profile-container">
+            <img src="profile-pic.png" alt="Profile Picture" style="width: 150px; height: auto;">
+        </div>
+        <h1>Pranav Sharma</h1>
+        <p>AWS Certified Developer | DevOps | Media Technology Master's Graduate | Audio Engineer | Software Developer</p>
+        <p>Email: <a href="mailto:pshar416@gmail.com">pshar416@gmail.com</a></p>
+    </header>
 
 <nav>
-    <a href="#leadership">Leadership & Achievements</a>
-    <a href="#skills">Other Skills</a>
-    <a href="#hobbies">Hobbies & Interests</a>
-    <a href="index.html">Back</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#socials">Socials</a>
+    <a href="about.html">Highlights</a>
 </nav>
 
-<section id="leadership">
-    <h2>Leadership Roles & Personal Experiences</h2>
+<section id="summary" class="summary">
+  <h2>Summary</h2>
+  <p>
+    Master's graduate in <strong>Media Technology</strong> with specialized expertise in
+    <span class="highlight">spatial acoustics</span> and <span class="highlight">cloud computing</span>. 
+    AWS Certified Developer with hands-on experience in building and managing <em>CI/CD pipelines</em>, 
+    containerized deployments, and cloud-native systems. Skilled in automating infrastructure, optimizing 
+    performance, and delivering real-time audio processing solutions. Passionate about bridging 
+    <span class="highlight">acoustic science</span> and <span class="highlight">DevOps engineering</span> 
+    to drive innovation in scalable, efficient systems.
+  </p>
+</section>
+
+
+
+
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-group fade-up">
+    <strong>Programming Languages:</strong> Python &bull; MATLAB
+  </div>
+  <div class="skill-group fade-up">
+    <strong>Monitoring, Observability & Security:</strong> Grafana &bull; Prometheus &bull; Datadog &bull; OWASP &bull; Trivy &bull; SonarQube
+  </div>
+  <div class="skill-group fade-up">
+    <strong>Databases:</strong> MySQL &bull; DynamoDB &bull; PostgreSQL
+  </div>
+  <div class="skill-group fade-up">
+    <strong>Version Control &amp; CI/CD:</strong> GitHub &bull; ArgoCD &bull; Jenkins
+  </div>
+  <div class="skill-group fade-up">
+    <strong>Cloud &amp; Infrastructure:</strong> AWS &bull; Terraform &bull; Docker &bull; Kubernetes &bull; Ansible
+  </div>
+  <div class="skill-group fade-up">
+    <strong>Networking:</strong> VPC &bull; Subnets &bull; CIDR Blocks &bull; Internet Gateway &bull; Route 53 &bull; Load Balancers (ALB/NLB)
+  </div>
+</section>
+
+
+<section id="certifications" class="certifications fade-up">
+    <h2>Certifications</h2>
+    <ul>
+        <li>
+        <a href="https://www.credly.com/badges/e666b1fd-275c-466d-9a81-42e666ae4763/public_url" target="_blank"> AWS Certified Developer (January 2025)
+        <img src="aws-certified-developer-associate.png" alt="AWS Certified Developer Badge" style="width: 30px; height: 30px; vertical-align: middle; margin-left: 10px;">
+        </a>
+        </li>        
+        <li>Agile Working (November 2018)</li>
+        <li>Internet of Things (November 2018)</li>
+    </ul>
+</section>
+
+<section id="experience" class="experience fade-up">
+    <h2>Experience</h2>
+    
     <div class="card">
-        <h3>Leadership Achievements</h3>
+        <h3>Graduate Researcher - Fraunhofer IIS</h3>
+        <p><em>Jan 2022 - Sep 2024 | Erlangen, Germany</em></p>
         <ul>
-            <li>Led a cross-functional team of 10 at Tata Consultancy Services, achieving 100% client satisfaction.</li>
-            <li>Recipient of the prestigious LIREL Honor Roll Award for leadership, integrity, and excellence.</li>
-            <li>Developed a mentorship program for junior colleagues, improving onboarding efficiency by 20%.</li>
-            <li>Co-led the publication of an internal knowledge-sharing newsletter on emerging technologies.</li>
+            <li>Developed and deployed the CINGO spatial audio system in Unity 3D, enhancing the user experience in virtual environments by creating modular software for real-time spatial audio rendering.</li>
+            <li>Conducted a comparative analysis of loudspeaker and headphone recordings using sine sweep, analyzing Room Impulse Responses (RIRs) and correlating acoustic measures with perceptual audio quality.</li>
+            <li>Recorded loudspeaker/headphones using sweeps for multiple source-receiver configurations to improve and enhance the RIR dataset.</li>
+            <li>Designed Acoustic Visualization tools using Qt/C++, enabling room acoustics visualization and analysis of large datasets.</li>
+            <li>Enhanced Binaural Room Impulse Responses (BRIRs) and assessed innovative spatial audio plugins, optimizing data-driven audio systems for improved localization, timbre, and envelopment, which ties into automated data extraction and performance analysis.</li>
+            <li>Played a pivotal role in the Mobile Audio Rendering team, enhancing overall user experience in spatial audio using signal processing.</li>
+            <li>Executed MUSHRA tests to assess spatial audio perceptual effects with HRTF across diverse populations, achieving a 30% improvement in audio quality.</li>
+            <li>Designed and implemented an analysis framework for comparing various spatial binaural renderers, enabling comprehensive comparison and optimization of spatial audio tools.</li>
+            <li>Created a RIR similarity matching algorithm using unsupervised machine learning, automating the comparison of Frequency Domain Network (FDN)-based RIRs with real-world RIRs, improving system efficiency by streamlining data processing.</li>
+        </ul>
+    </div>
+
+    <div class="card fade-up">
+        <h3>Associate Engineer - Tata Consultancy Services</h3>
+        <p><em>Sep 2018 - Jun 2020 | Pune, India</em></p>
+        <ul>
+            <li>Designed and deployed a three-tier web application using Docker, Kubernetes, Jenkins, and AWS EC2, improving deployment efficiency by 40%.</li>
+            <li>Deployed a complete environment, including VPC, EC2 instances, RDS, and S3 buckets, with version-controlled templates.</li>
+            <li>Implemented a CI/CD pipeline using AWS CodePipeline and CodeBuild, automating the deployment of a serverless application with AWS Lambda and S3, reducing deployment time by 30%.</li>
+            <li>Maintained and optimized the Model Data Repository for offshore banking operations with the Bank of Montreal, ensuring high data integrity and performance.</li>
+            <li>Designed data models and implemented complex SQL queries for data extraction, reporting, and analytics, reducing query execution time by 20%.</li>
+            <li>Developed a RESTful API for managing database interactions, integrating DynamoDB for highly available data processing.</li>
+            <li>Standardized infrastructure deployment using AWS CDK and CloudFormation templates, reducing manual configuration errors by 80%.</li>
+            <li>Deployed a production-grade Kubernetes application on AWS EKS, optimizing resource allocation and scaling by 50%. Created Helm charts to streamline deployments and manage versioned updates, achieving seamless rollouts with zero downtime. Automated cluster provisioning and scaling through CI/CD pipelines using GitHub Actions and Terraform, reducing deployment cycles by 60%. Ensured high availability with 99.95% uptime and improved operational efficiency by cutting manual intervention by 45%.</li>
         </ul>
     </div>
 </section>
 
-<section id="skills">
-    <h2>Other Skills</h2>
-    <div class="card">
-        <h3>Leadership in Sports</h3>
-        <p>As Captain of the under-19 cricket team during Higher Secondary, I led the team to victory in multiple regional tournaments, demonstrating my team-building and leadership skills on and off the field.</p>
+
+
+<section id="projects" class="projects fade-up">
+  <h2>Projects</h2>
+
+    <div class="card fade-up">
+    <h3>CryptoChat AI: AI-powered Ethereum Transaction Agent</h3>
+    <p><em>Blockchain Transaction Chatbot</em></p>
+    <p>Built and Dockerized an AI chat agent enabling Ethereum Sepolia transactions. Deployed dockerized web app on AWS EC2 with automated Node.js and PNPM setup.</p>
+    <div class="badges">
+      <span>Node.js</span>
+      <span>Docker</span>
+      <span>AWS</span>
+      <span>Blockchain</span>
     </div>
-    <div class="card">
-        <h3>Creative Arts</h3>
-        <p>Passionate about music production and composition, I have created original tracks and collaborated with peers for live performances, showcasing my creativity and artistic expression.</p>
+    <a href="https://github.com/Pshar10/CryptoChat-AI" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+    <div class="card fade-up">
+    <h3>Bill Dekho: Automated Smart Meter Tracker</h3>
+    <p><em>Electricity Usage Analytics Web App</em></p>
+    <p>Web app for electricity usage analytics via data scraping with Selenium. Deployed with Django API, Docker, reverse proxy (NGINX), and ArgoCD for continuous delivery.</p>
+    <div class="badges">
+      <span>Django</span>
+      <span>Docker</span>
+      <span>Selenium</span>
+      <span>CI/CD</span>
     </div>
-    <div class="card">
-        <h3>Event Management</h3>
-        <p>Successfully hosted and organized several cultural and technical events, honing my public speaking, organizational, and multitasking skills.</p>
+    <a href="https://github.com/Pshar10/smart-bill-tracker" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>AI-Based Decay Parameter Estimation</h3>
+    <p><em>Master's Thesis</em></p>
+    <p>Developed a novel DCNN model estimating decay parameters from reverberant speech signals with <strong>RMS errors of 2.9-6 dB</strong>.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Deep Learning</span>
+      <span>Signal Processing</span>
     </div>
-    <div class="card">
-        <h3>Team Building</h3>
-        <p>Actively participated in inter-school debates and sports tournaments, fostering collaboration and nurturing teamwork among diverse groups.</p>
+    <a href="https://github.com/Pshar10/Blind-Estimation-of-EDC-from-Live-Signals" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Spotify Trendz - Real-Time Music Trend Analysis & DevOps Automation</h3>
+    <p><em>Real-Time Music Trend Analysis</em></p>
+    <p>This project automates real-time music trend analysis using Kubernetes and Terraform. Leveraged EKS for orchestration and Docker Swarm for container management, reducing deployment time by 40%. Integrated Prometheus and Grafana for monitoring.</p>
+    <div class="badges">
+      <span>Kubernetes</span>
+      <span>Terraform</span>
+      <span>Docker</span>
+      <span>Prometheus</span>
+      <span>Grafana</span>
     </div>
+    <a href="https://github.com/Pshar10/Spotify_trendz_Rest_API" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Spring Boot CI/CD Pipeline</h3>
+    <p><em>Automated Deployment Pipeline</em></p>
+    <p>A robust CI/CD pipeline for automating Spring Boot app deployment with Jenkins, Docker, Kubernetes, and ArgoCD, integrated with SonarQube for static code analysis.</p>
+    <div class="badges">
+      <span>Jenkins</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>SonarQube</span>
+      <span>ArgoCD</span>
+    </div>
+    <a href="https://github.com/Pshar10/spring-boot-app-cicd-pipeline" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Three-Tier Web Application</h3>
+    <p><em>Digital Resume Application</em></p>
+    <p>A Dockerized microservice-based three-tier web app with a frontend (HTML, CSS, JS) and backend (Django), deployed on Kubernetes.</p>
+    <div class="badges">
+      <span>Django</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Microservices</span>
+    </div>
+    <a href="https://github.com/Pshar10/Three-Tier-Web-Application" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>AI/ML Pipeline</h3>
+    <p>Developed and deployed an automated machine learning pipeline on AWS Elastic Beanstalk, integrating AWS CodePipeline and GitHub for CI/CD.</p>
+    <div class="badges">
+      <span>AWS</span>
+      <span>Elastic Beanstalk</span>
+      <span>CI/CD</span>
+      <span>Machine Learning</span>
+    </div>
+    <a href="https://github.com/Pshar10/AI-ML-pipeline" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Real-Time Contour Detection</h3>
+    <p>Two-tier web app for real-time contour detection and sensor control using Raspberry Pi and OpenCV, deployed with AWS Elastic Beanstalk and Docker.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>OpenCV</span>
+      <span>Raspberry Pi</span>
+      <span>AWS</span>
+      <span>Docker</span>
+    </div>
+    <a href="https://github.com/Pshar10/Web_Application_Countour_Detection_Using_Raspberrypi_And_Sensor_Controls" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Video Processing</h3>
+    <p>Python programs for video processing tasks including channel segregation, quantization, DCT, kernel filters, object detection, and pickling.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Video Processing</span>
+      <span>Computer Vision</span>
+    </div>
+    <a href="https://github.com/Pshar10/SimpleVideoCodec" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Context-Based Image Retrieval</h3>
+    <p>Implemented image retrieval from a large database based on visual content using machine learning.</p>
+    <div class="badges">
+      <span>Machine Learning</span>
+      <span>Image Retrieval</span>
+      <span>Python</span>
+    </div>
+    <a href="https://github.com/Pshar10/Content_Based_Image_Retrieval" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>VR Game Development</h3>
+    <p>Developed an arm-swinging locomotion game using HTC Vive, reducing dizziness by 60% to enhance VR user experience.</p>
+    <div class="badges">
+      <span>Unity</span>
+      <span>VR</span>
+      <span>HTC Vive</span>
+    </div>
+    <a href="https://github.com/Pshar10/VR_Game" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Loudspeakers to Go</h3>
+    <p>Mobile virtual loudspeaker using Binaural Room Impulse Response database and Intel RealSense depth camera, enhancing spatial audio on portable devices.</p>
+    <div class="badges">
+      <span>Audio Processing</span>
+      <span>Spatial Audio</span>
+      <span>Intel RealSense</span>
+    </div>
+    <a href="https://github.com/Pshar10/Loudspeakers_2_GO" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Audio Processing</h3>
+    <p>Python programs for advanced audio processing tasks: down/up sampling, filtering, quantization, low delay filter-banks, pitch/speed enhancement, DCT, MDCT, and QMF.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Audio Processing</span>
+      <span>Signal Processing</span>
+    </div>
+    <a href="https://github.com/Pshar10/Audio_Video_Processing" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
 </section>
 
-<section id="hobbies">
-    <h2>Hobbies & Interests</h2>
-    <div class="card">
-        <h3>Photography & Travel</h3>
-        <p>I have a deep passion for photography, capturing moments from my travels, and creating visually compelling content for personal projects. I enjoy discovering new cultures and landscapes through the lens of my camera.</p>
-    </div>
-</section>
 
-<footer>
+
+<!-- <section id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions or would like to get in touch, feel free to reach out!</p>
+    <form method="POST" action="/submit/">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        </div>
+    
+        <button type="submit">Send Message</button>
+    </form>
+    
+</section> -->
+
+<!-- <div id="chat-bubble">
+    <button id="chat-button">💬</button>
+    <div id="chat-window" style="display: none;">
+        <div id="chat-header">
+            <span>Chat</span>
+            <button id="close-chat">X</button>
+        </div>
+        <div id="chat-body">
+            <p>Bot: Hi! What is your name?</p>
+        </div>
+        <form id="chat-form">
+            <input type="text" id="chat-input" placeholder="Type your message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div> -->
+
+<footer id="socials">
     <p>Connect with me on <a href="https://www.linkedin.com/in/pranav1010">LinkedIn</a> | <a href="https://github.com/Pshar10">GitHub</a></p>
     <p>&copy; 2025 Pranav Sharma</p>
 </footer>
-<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
