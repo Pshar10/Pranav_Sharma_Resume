@@ -32,25 +32,45 @@
     <a href="about.html">Highlights</a>
 </nav>
 
-<section id="summary">
-    <h2>Summary</h2>
-    <p>Master's graduate in Media Technology with expertise in spatial acoustics and cloud technologies. AWS Certified Developer with experience in CI/CD pipelines, containerization, and cloud-native deployments. Skilled in automation, system scalability, and real-time audio processing. Passionate about bridging acoustics and DevOps to drive innovation in technology.</p>
+<section id="summary" class="summary fade-up">
+  <h2>Summary</h2>
+  <p>
+    Master's graduate in <strong>Media Technology</strong> with specialized expertise in
+    <span class="highlight">spatial acoustics</span> and <span class="highlight">cloud computing</span>. 
+    AWS Certified Developer with hands-on experience in building and managing <em>CI/CD pipelines</em>, 
+    containerized deployments, and cloud-native systems. Skilled in automating infrastructure, optimizing 
+    performance, and delivering real-time audio processing solutions. Passionate about bridging 
+    <span class="highlight">acoustic science</span> and <span class="highlight">DevOps engineering</span> 
+    to drive innovation in scalable, efficient systems.
+  </p>
 </section>
 
 
 
-<section id="skills" >
-    <h2>Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> Python, C++, MATLAB</li>
-            <li><strong>Frameworks and Tools:</strong> PyTorch, Docker, Kubernetes, Terraform, Jenkins, ArgoCD, Prometheus, Grafana</li>
-            <li><strong>Databases:</strong> MySQL, MongoDB, DynamoDB</li>
-            <li><strong>Data Analysis & BI Tools:</strong> Pandas, AWS Developer Tools</li>
-            <li><strong>Languages:</strong> English (Proficient), German (B1)</li>
-        </ul>
 
 
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skill-group">
+    <strong>Programming Languages:</strong> Python &bull; MATLAB
+  </div>
+  <div class="skill-group">
+    <strong>Monitoring, Observability & Security:</strong> Grafana &bull; Prometheus &bull; Datadog &bull; OWASP &bull; Trivy &bull; SonarQube
+  </div>
+  <div class="skill-group">
+    <strong>Databases:</strong> MySQL &bull; DynamoDB &bull; PostgreSQL
+  </div>
+  <div class="skill-group">
+    <strong>Version Control &amp; CI/CD:</strong> GitHub &bull; ArgoCD &bull; Jenkins
+  </div>
+  <div class="skill-group">
+    <strong>Cloud &amp; Infrastructure:</strong> AWS &bull; Terraform &bull; Docker &bull; Kubernetes &bull; Ansible
+  </div>
+  <div class="skill-group">
+    <strong>Networking:</strong> VPC &bull; Subnets &bull; CIDR Blocks &bull; Internet Gateway &bull; Route 53 &bull; Load Balancers (ALB/NLB)
+  </div>
 </section>
+
 
 <section id="certifications" class="certifications fade-up">
     <h2>Certifications</h2>
@@ -101,109 +121,196 @@
 </section>
 
 
-<section id="projects" class="projects fade-up">
-    <h2>Projects</h2>
-    <div class="card">
-        <h3>AI-Based Decay Parameter Estimation</h3>
-        <p><em>Master's Thesis</em></p>
-        <p>Developed a novel DCNN model for estimating decay parameters directly from reverberant speech signals, achieving RMS errors of 2.9 to 6 dB for EDC loss and 0.08 to 0.21 seconds for reverberation time (RT) loss.</p>
-        <a href="https://github.com/Pshar10/Blind-Estimation-of-EDC-from-Live-Signals">GitHub Link</a>
-    </div>
-    <div class="card">
-    <h3>Bill Dekho: Automated Smart Meter Tracker</h3>
-    <p><em>Electricity Usage Analytics Web App</em></p>
-    <p>Web app for electricity usage analytics via data scraping with Selenium.  
-    Deployed with Django API, Docker, reverse proxy (NGINX), and ArgoCD for continuous delivery.</p>
-    <a href="https://github.com/Pshar10/smart-bill-tracker">GitHub Link</a>
-    </div>
 
-    <div class="card">
+<section id="projects" class="projects fade-up">
+  <h2>Projects</h2>
+
+    <div class="card fade-up">
     <h3>CryptoChat AI: AI-powered Ethereum Transaction Agent</h3>
     <p><em>Blockchain Transaction Chatbot</em></p>
-    <p>Built and Dockerized an AI chat agent enabling Ethereum Sepolia transactions.  
-    Deployed dockerized web app on AWS EC2 with automated Node.js and PNPM setup.</p>
-    <a href="https://github.com/Pshar10/CryptoChat-AI">GitHub Link</a>
+    <p>Built and Dockerized an AI chat agent enabling Ethereum Sepolia transactions. Deployed dockerized web app on AWS EC2 with automated Node.js and PNPM setup.</p>
+    <div class="badges">
+      <span>Node.js</span>
+      <span>Docker</span>
+      <span>AWS</span>
+      <span>Blockchain</span>
     </div>
-    
-    <div class="card">
-        <h3>Spotify Trendz - Real-Time Music Trend Analysis & DevOps Automation</h3>
-        <p><em>Real-Time Music Trend Analysis</em></p>
-        <p>This project automates real-time music trend analysis using Kubernetes and Terraform. By leveraging EKS for orchestration and Docker Swarm for container management, it reduced deployment time by 40%. Scalability and fault tolerance were enhanced through container orchestration, with Prometheus and Grafana integrated for monitoring and observability.</p>
-        <a href="https://github.com/Pshar10/Spotify_trendz_Rest_API">GitHub Link</a>
-    </div>
-    
-    <div class="card">
-        <h3>Spring Boot CI/CD Pipeline</h3>
-        <p><em>Automated Deployment Pipeline</em></p>
-        <p>A robust CI/CD pipeline for automating the deployment of a Spring Boot application using Jenkins, Docker, and Kubernetes. Integrated SonarQube for static code analysis, deployed in a Kubernetes cluster with GitOps managed by ArgoCD, and containerized using Docker.</p>
-        <a href="https://github.com/Pshar10/spring-boot-app-cicd-pipeline">GitHub Link</a>
-    </div>
-    
-    <div class="card">
-        <h3>Three-Tier Web Application</h3>
-        <p><em>Digital Resume Application</em></p>
-        <p>A three-tier web application implemented as a Dockerized microservice designed to act as a digital resume. The application uses a frontend built with HTML, CSS, and JavaScript and a backend Django application. Deployed in Kubernetes for scalability and reliability.</p>
-        <a href="https://github.com/Pshar10/Three-Tier-Web-Application">GitHub Link</a>
-    </div>
-    
-    
+    <a href="https://github.com/Pshar10/CryptoChat-AI" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
     <div class="card fade-up">
-        <h3>AI/ML Pipeline</h3>
-        <p>Developed and deployed a fully automated machine learning pipeline, utilizing Elastic Beanstalk for serverless application deployment. Integrated AWS CodePipeline with GitHub for CI/CD, automating the deployment process and enabling seamless model training, evaluation, and deployment.</p>
-        <a href="https://github.com/Pshar10/AI-ML-pipeline">GitHub Link</a>
+    <h3>Bill Dekho: Automated Smart Meter Tracker</h3>
+    <p><em>Electricity Usage Analytics Web App</em></p>
+    <p>Web app for electricity usage analytics via data scraping with Selenium. Deployed with Django API, Docker, reverse proxy (NGINX), and ArgoCD for continuous delivery.</p>
+    <div class="badges">
+      <span>Django</span>
+      <span>Docker</span>
+      <span>Selenium</span>
+      <span>CI/CD</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>Real-Time Contour Detection</h3>
-        <p>Developed a two-tier web application for real-time contour detection and sensor control using Raspberry Pi and OpenCV. Deployed the system using AWS Elastic Beanstalk and Docker.</p>
-        <a href="https://github.com/Pshar10/Web_Application_Countour_Detection_Using_Raspberrypi_And_Sensor_Controls">GitHub Link</a>
+    <a href="https://github.com/Pshar10/smart-bill-tracker" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>AI-Based Decay Parameter Estimation</h3>
+    <p><em>Master's Thesis</em></p>
+    <p>Developed a novel DCNN model estimating decay parameters from reverberant speech signals with <strong>RMS errors of 2.9-6 dB</strong>.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Deep Learning</span>
+      <span>Signal Processing</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>Video Processing</h3>
-        <p>Created Python programs for channel segregation, quantization, DCT, kernel filters, object detection, and pickling for video processing tasks.</p>
-        <a href="https://github.com/Pshar10/SimpleVideoCodec">GitHub Link</a>
+    <a href="https://github.com/Pshar10/Blind-Estimation-of-EDC-from-Live-Signals" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Spotify Trendz - Real-Time Music Trend Analysis & DevOps Automation</h3>
+    <p><em>Real-Time Music Trend Analysis</em></p>
+    <p>This project automates real-time music trend analysis using Kubernetes and Terraform. Leveraged EKS for orchestration and Docker Swarm for container management, reducing deployment time by 40%. Integrated Prometheus and Grafana for monitoring.</p>
+    <div class="badges">
+      <span>Kubernetes</span>
+      <span>Terraform</span>
+      <span>Docker</span>
+      <span>Prometheus</span>
+      <span>Grafana</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>Context-Based Image Retrieval</h3>
-        <p>Implemented a system to retrieve images from a large database based on their visual content using machine learning techniques.</p>
-        <a href="https://github.com/Pshar10/Content_Based_Image_Retrieval">GitHub Link</a>
+    <a href="https://github.com/Pshar10/Spotify_trendz_Rest_API" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Spring Boot CI/CD Pipeline</h3>
+    <p><em>Automated Deployment Pipeline</em></p>
+    <p>A robust CI/CD pipeline for automating Spring Boot app deployment with Jenkins, Docker, Kubernetes, and ArgoCD, integrated with SonarQube for static code analysis.</p>
+    <div class="badges">
+      <span>Jenkins</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>SonarQube</span>
+      <span>ArgoCD</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>VR Game Development</h3>
-        <p>Developed an arm-swinging locomotion game using HTC Vive, enhancing VR user experience by reducing dizziness by 60% while playing games.</p>
-        <a href="https://github.com/Pshar10/VR_Game">GitHub Link</a>
+    <a href="https://github.com/Pshar10/spring-boot-app-cicd-pipeline" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Three-Tier Web Application</h3>
+    <p><em>Digital Resume Application</em></p>
+    <p>A Dockerized microservice-based three-tier web app with a frontend (HTML, CSS, JS) and backend (Django), deployed on Kubernetes.</p>
+    <div class="badges">
+      <span>Django</span>
+      <span>Docker</span>
+      <span>Kubernetes</span>
+      <span>Microservices</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>Loudspeakers to Go</h3>
-        <p>Created a mobile virtual loudspeaker setup on headphones using the Binaural Room Impulse Response database and Intel RealSense depth camera with 3 DoF, enhancing the spatial audio experience on portable devices.</p>
-        <a href="https://github.com/Pshar10/Loudspeakers_2_GO">GitHub Link</a>
+    <a href="https://github.com/Pshar10/Three-Tier-Web-Application" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>AI/ML Pipeline</h3>
+    <p>Developed and deployed an automated machine learning pipeline on AWS Elastic Beanstalk, integrating AWS CodePipeline and GitHub for CI/CD.</p>
+    <div class="badges">
+      <span>AWS</span>
+      <span>Elastic Beanstalk</span>
+      <span>CI/CD</span>
+      <span>Machine Learning</span>
     </div>
-    
-    <div class="card fade-up">
-        <h3>Audio Processing</h3>
-        <p>Developed Python programs for down/up sampling, filtering, quantization, low delay filter-banks, pitch/speed enhancement, DCT, MDCT, and QMF for advanced audio processing tasks.</p>
-        <a href="https://github.com/Pshar10/Audio_Video_Processing">GitHub Link</a>
+    <a href="https://github.com/Pshar10/AI-ML-pipeline" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Real-Time Contour Detection</h3>
+    <p>Two-tier web app for real-time contour detection and sensor control using Raspberry Pi and OpenCV, deployed with AWS Elastic Beanstalk and Docker.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>OpenCV</span>
+      <span>Raspberry Pi</span>
+      <span>AWS</span>
+      <span>Docker</span>
     </div>
-    
+    <a href="https://github.com/Pshar10/Web_Application_Countour_Detection_Using_Raspberrypi_And_Sensor_Controls" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Video Processing</h3>
+    <p>Python programs for video processing tasks including channel segregation, quantization, DCT, kernel filters, object detection, and pickling.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Video Processing</span>
+      <span>Computer Vision</span>
+    </div>
+    <a href="https://github.com/Pshar10/SimpleVideoCodec" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Context-Based Image Retrieval</h3>
+    <p>Implemented image retrieval from a large database based on visual content using machine learning.</p>
+    <div class="badges">
+      <span>Machine Learning</span>
+      <span>Image Retrieval</span>
+      <span>Python</span>
+    </div>
+    <a href="https://github.com/Pshar10/Content_Based_Image_Retrieval" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>VR Game Development</h3>
+    <p>Developed an arm-swinging locomotion game using HTC Vive, reducing dizziness by 60% to enhance VR user experience.</p>
+    <div class="badges">
+      <span>Unity</span>
+      <span>VR</span>
+      <span>HTC Vive</span>
+    </div>
+    <a href="https://github.com/Pshar10/VR_Game" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Loudspeakers to Go</h3>
+    <p>Mobile virtual loudspeaker using Binaural Room Impulse Response database and Intel RealSense depth camera, enhancing spatial audio on portable devices.</p>
+    <div class="badges">
+      <span>Audio Processing</span>
+      <span>Spatial Audio</span>
+      <span>Intel RealSense</span>
+    </div>
+    <a href="https://github.com/Pshar10/Loudspeakers_2_GO" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
+
+  <div class="card fade-up">
+    <h3>Audio Processing</h3>
+    <p>Python programs for advanced audio processing tasks: down/up sampling, filtering, quantization, low delay filter-banks, pitch/speed enhancement, DCT, MDCT, and QMF.</p>
+    <div class="badges">
+      <span>Python</span>
+      <span>Audio Processing</span>
+      <span>Signal Processing</span>
+    </div>
+    <a href="https://github.com/Pshar10/Audio_Video_Processing" class="project-link" target="_blank" rel="noopener noreferrer">
+      <img src="github-icon.svg" alt="GitHub" class="icon" /> GitHub Link
+    </a>
+  </div>
 </section>
 
-<section id="education" class="education fade-up">
-    <h2>Education</h2>
-    <div class="card">
-        <h3>Master's in Media Technology</h3>
-        <p><em>TU Ilmenau, Germany | GPA: 1.3</em></p>
-        <p><strong>Relevant Courses:</strong> Advanced Digital Signal Processing, Deep Learning, AI, Audio/Video Coding</p>
-    </div>
-    <div class="card fade-up">
-        <h3>Bachelor's in Electronics and Communication</h3>
-        <p><em>SMVDU, Jammu, India</em></p>
-        <p><strong>Relevant Courses:</strong> Digital Electronics, Real-Time DSP, Signal Processing</p>
-    </div>
-</section>
 
 
 <!-- <section id="contact">
